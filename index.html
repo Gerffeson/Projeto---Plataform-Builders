@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>DevopsApp</title>
+</head>
+
+<body>
+    <p>May the Ops be with you</p>
+    <h1 id="Trocar">Windows</h1>
+
+    <form action="/items" method="POST">
+        <input type="text" placeholder="name" id="name">
+        <input type="text" placeholder="quote" id="quote">
+        <button type="submit">Submit</button>
+        <input type="button" value="Limpar" onClick="limpar()">
+        <input type="button" value="Trocar" onClick="trocar()">
+    </form>
+    <script>
+        function limpar() {
+            document.getElementById('name').value = "";
+            document.getElementById('quote').value = "";
+        }
+
+        function trocar() {
+            document.getElementById("Trocar").innerHTML = "Linux is beeter";
+        }
+    </script>
+
+</body>
+
+</html>
